@@ -69,6 +69,11 @@ const int kDefaultFontSize = 20;
     return [self fontWithName:@"texgyretermes-math" size:size];
 }
 
+- (MTFont *)firaMathFontWithSize:(CGFloat)size
+{
+    return [self fontWithName:@"FiraMath-Regular" size:size];
+}
+
 - (MTFont *)defaultFont
 {
     return [self latinModernFontWithSize:kDefaultFontSize];

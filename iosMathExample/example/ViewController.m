@@ -447,6 +447,16 @@
     }
 }
 
+- (void) firaMathButtonPressed:(id)sender
+{
+    for (MTMathUILabel* label in self.demoLabels) {
+        label.font = [[MTFontManager fontManager] firaMathFontWithSize:label.font.fontSize];
+    }
+    for (MTMathUILabel* label in self.labels) {
+        label.font = [[MTFontManager fontManager] firaMathFontWithSize:label.font.fontSize];
+    }
+}
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     if (textField == self.latexField) {
@@ -473,7 +483,7 @@
 {
     self = [super init];
     if (self) {
-        self.fontNames = @[@"Latin Modern Math", @"TeX Gyre Termes", @"XITS Math"];
+        self.fontNames = @[@"Latin Modern Math", @"TeX Gyre Termes", @"XITS Math", @"FiraMath"];
     }
     return self;
 }
@@ -507,7 +517,8 @@
 
         case 2:
             [self.controller xitsButtonPressed:nil];
-
+        case 3:
+            [self.controller firaMathButtonPressed:nil];
         default:
             break;
     }

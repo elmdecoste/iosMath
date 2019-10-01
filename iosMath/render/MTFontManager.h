@@ -41,4 +41,7 @@
 /** Helper function to return the Latin Modern Math font. */
 - (nonnull MTFont*) latinModernFontWithSize:(CGFloat) size;
 
+/** Helper function to return the Fira Math font. */
+- (nonnull MTFont*) firaMathFontWithSize:(CGFloat) size;
+
 @end
