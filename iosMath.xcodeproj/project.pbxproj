@@ -53,6 +53,8 @@
 		49EEFD7C1D19B664002D15C4 /* MTTypesetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EEFD7A1D19B664002D15C4 /* MTTypesetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		49EEFD7D1D19B664002D15C4 /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEFD7B1D19B664002D15C4 /* MTTypesetter.m */; };
 		5CA7D6C1A46D34A00133B0C2 /* libPods-iosMathExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BDFD1AB91580A33D83C75E /* libPods-iosMathExample.a */; };
+		D44E51152343FC5900B79700 /* FiraMath-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D44E51132343FC5900B79700 /* FiraMath-Regular.otf */; };
+		D44E51162343FC5900B79700 /* FiraMath-Regular.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44E51142343FC5900B79700 /* FiraMath-Regular.plist */; };
 		D94FE3531B90DD29002D11E2 /* MTMathUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF417DAED9000939107 /* MTMathUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3541B90DE46002D11E2 /* MTMathListDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF317DAED9000939107 /* MTMathListDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3551B90DE5B002D11E2 /* MTMathList.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EED0217DAEDB500939107 /* MTMathList.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -135,6 +137,8 @@
 		964660A84E6FEDD150C994C8 /* Pods-iosMathTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.release.xcconfig"; sourceTree = "<group>"; };
 		B16B9A63054AE3FFB5C36F6B /* Pods-iosMathExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.release.xcconfig"; sourceTree = "<group>"; };
 		BB4250423755E0D3CD2BA614 /* Pods-iosMathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D44E51132343FC5900B79700 /* FiraMath-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraMath-Regular.otf"; sourceTree = "<group>"; };
+		D44E51142343FC5900B79700 /* FiraMath-Regular.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FiraMath-Regular.plist"; sourceTree = "<group>"; };
 		D93290960585498BBAEE4535 /* Pods-iosMathExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.debug.xcconfig"; sourceTree = "<group>"; };
 		D94FE3501B90DCA5002D11E2 /* IosMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosMath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -317,6 +321,8 @@
 		49A27B0418EBF5B30030B7EF /* MathFontBundle */ = {
 			isa = PBXGroup;
 			children = (
+				D44E51132343FC5900B79700 /* FiraMath-Regular.otf */,
+				D44E51142343FC5900B79700 /* FiraMath-Regular.plist */,
 				49DEC80F1CF3C69E000053CD /* xits-math.plist */,
 				49DEC8101CF3C69E000053CD /* xits-math.otf */,
 				49DEC8111CF3C69E000053CD /* texgyretermes-math.plist */,
@@ -492,12 +498,19 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0630;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					49965EFB17CBBA2700A555C5 = {
+						DevelopmentTeam = T984FR9Q54;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 49965EF717CBBA2700A555C5 /* Build configuration list for PBXProject "iosMath" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 49965EF317CBBA2700A555C5;
@@ -538,12 +551,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44E51162343FC5900B79700 /* FiraMath-Regular.plist in Resources */,
 				49DEC81A1CF3C69E000053CD /* latinmodern-math.otf in Resources */,
 				49DEC8181CF3C69E000053CD /* texgyretermes-math.otf in Resources */,
 				49DEC8161CF3C69E000053CD /* xits-math.otf in Resources */,
 				49DEC8191CF3C69E000053CD /* latinmodern-math.plist in Resources */,
 				49DEC8171CF3C69E000053CD /* texgyretermes-math.plist in Resources */,
 				49DEC8151CF3C69E000053CD /* xits-math.plist in Resources */,
+				D44E51152343FC5900B79700 /* FiraMath-Regular.otf in Resources */,
 				49A27B0918EBF5B30030B7EF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,7 +591,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests-resources.sh",
-        "${PODS_CONFIGURATION_BUILD_DIR}/iosMath-iOS6.0/mathFonts.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath-iOS6.0/mathFonts.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -827,7 +842,7 @@
 				DEVELOPMENT_TEAM = T984FR9Q54;
 				INFOPLIST_FILE = "iosMathExample/iosMath-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rotpanda.MathChat.iosMathExample;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.pendragon.iosMathExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -844,7 +859,7 @@
 				DEVELOPMENT_TEAM = T984FR9Q54;
 				INFOPLIST_FILE = "iosMathExample/iosMath-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rotpanda.MathChat.iosMathExample;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.pendragon.iosMathExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
